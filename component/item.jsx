@@ -18,15 +18,15 @@ export default function Item() {
     }
 
     return (
-        <TouchableOpacity onPress={() => navigation.navigate('DetalheItem')} style={styles.slide}>
+        <TouchableOpacity onPress={() => navigation.navigate('Produto')} style={styles.slide}>
             <View style={styles.colum1}> 
-                <Text style={styles.nomeItem}>Salada Ravanello </Text>
-                <Text style={styles.descricao}>Rabanetes, folhas verdes e molho agridoce salpicados com gergelim.</Text>
-                <Text style={[styles.title2, { color: '#FF9431' }]}>{formatarMoeda(44.90)}</Text>
+                <Text style={styles.nomeItem}>Almoço</Text>
+                <Text style={styles.descricao}>Arroz,Feijão,Salda e frango grelhado</Text>
+                <Text style={[styles.title2, { color: '#FF3131' }]}>{formatarMoeda(29.90)}</Text>
             </View>
 
             <View style={styles.colum2}> 
-                <Image style={styles.itemImage} source={require('/views/img/item.png')} />
+                <Image style={styles.itemImage} source={require('../icons/refeicao.png')} />
             </View>
 
             {/* 

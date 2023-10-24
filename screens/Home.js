@@ -62,7 +62,7 @@ export default function Home({ navigation }) {
         <View style={styles.cards}>
           {listagemLojas.map((index) => (
             <View key={index}>
-              <TouchableOpacity onPress={() => navigation.navigate('HomeLoja')}>
+              <TouchableOpacity onPress={() => navigation.navigate('Restaurante')}>
                 <Loja />
               </TouchableOpacity>
             </View>

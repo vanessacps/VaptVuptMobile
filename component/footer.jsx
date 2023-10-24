@@ -8,24 +8,6 @@ export default function Footer() {
 
   return (
     <View style={styles.footerContainer}>
-      {/*<TouchableOpacity
-        style={styles.button}
-        onPress={() => navigation.navigate('Home')}
-      >
-        <Icon name="home" type="material" color="#FF9431" size={30} iconStyle={styles.iconStyle} />
-      </TouchableOpacity>
-
-      <TouchableOpacity
-        style={styles.button}
-      >
-        <Icon name="receipt-outline-rounded" type="material" iconStyle={styles.iconStyle} />
-      </TouchableOpacity>
-
-      {/* <TouchableOpacity
-        style={styles.button}
-      >
-        <Icon name="shopping-bag-outline" type="material"  iconStyle={styles.iconStyle} />
-      </TouchableOpacity> */}
 
       <TouchableOpacity onPress={() => navigation.navigate('Home')}>
         <Image style={[styles.icon, { tintColor: '#FF3131', }]} source={{ uri: 'https://api.iconify.design/circum:home.svg', }} />
@@ -35,7 +17,7 @@ export default function Footer() {
         <Image style={[styles.icon, { tintColor: '#FF3131', }]} source={{ uri: 'https://api.iconify.design/circum:receipt.svg', }} />
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => navigation.navigate('')}>
+      <TouchableOpacity onPress={() => navigation.navigate('Carrinho')}>
         <Image style={[styles.icon, { tintColor: '#FF3131', }]} source={{ uri: 'https://api.iconify.design/circum:shopping-basket.svg', }} />
       </TouchableOpacity>
 

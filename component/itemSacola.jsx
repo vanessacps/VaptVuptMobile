@@ -18,16 +18,16 @@ export default function Item() {
     }
 
     return (
-        <TouchableOpacity onPress={() => navigation.navigate('DetalheItem')} style={styles.slide}>
+        <TouchableOpacity onPress={() => navigation.navigate('Produto')} style={styles.slide}>
 
             <View style={styles.colum1}>
-                <Image style={styles.itemImage} source={require('/views/img/item.png')} />
+                <Image style={styles.itemImage} source={require('../icons/almoco.jpg')} />
             </View>
 
             <View style={styles.colum2}>
-                <Text style={styles.nomeItem}>Salada Ravanello </Text>
+                <Text style={styles.nomeItem}>Almoço Social </Text>
                
-                <Text style={[styles.title2, { color: '#FF9431' }]}>{formatarMoeda(44.90)}</Text>
+                <Text style={[styles.title2, { color: '#FF3131' }]}>{formatarMoeda(29.90)}</Text>
             </View>
 
             <View style={styles.line4 }>
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
         fontSize: 14,
         letterSpacing: 1.2,
         fontWeight: '550',
-        color:'#FF9431'
+        color:'#FF3131'
     },
     nomeItem: {
         color: '#0D0D0D',
